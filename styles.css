@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "Baloo Bhai 2";
+  /*  src: url("fonts/BalooBhai2-VariableFont_wght.ttf"); */
+  src: url("fonts/BalooBhai2-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: url("fonts/YanoneKaffeesatz-VariableFont_wght.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +14,8 @@
 :root {
   --nav-background: rgb(25, 102, 211);
   --blue: rgb(64, 124, 209);
+  --nav-title-font: "Yanone Kaffeesatz";
+  --prim-font: "Baloo Bhai 2";
 }
 
 header {
@@ -19,6 +30,8 @@ header {
 .logo h1 {
   color: white;
   text-shadow: 4px 4px 4px black;
+  font-family: var(--nav-title-font);
+  font-size: 2rem;
 }
 
 .mobile-header {
@@ -61,6 +74,7 @@ nav .nav-items li a {
   text-decoration: none;
   color: white;
   text-shadow: 2px 2px 4px black;
+  font-family: var(--prim-font);
 }
 
 nav .nav-items li a:hover {
@@ -77,6 +91,7 @@ nav .nav-items li a:hover {
   padding: 0.3rem 1rem;
   box-shadow: 2px 2px 2px black;
   cursor: pointer;
+  font-family: var(--prim-font);
 }
 
 .user-login button:focus {
@@ -109,6 +124,7 @@ nav .nav-items li a:hover {
   padding-bottom: 2rem;
   text-align: center;
   animation: slideIn 10s ease-in-out 0.5s both infinite;
+  font-family: var(--prim-font);
 }
 
 .slider-img {
@@ -128,6 +144,7 @@ nav .nav-items li a:hover {
   font-size: 2.5rem;
   font-weight: bolder;
   text-align: center;
+  font-family: var(--prim-font);
 }
 
 #anime-container .anime-header .divider {
@@ -165,6 +182,7 @@ nav .nav-items li a:hover {
   text-align: center;
   font-size: 1.6rem;
   font-weight: bolder;
+  font-family: var(--prim-font);
 }
 
 #pricing {
@@ -180,6 +198,7 @@ nav .nav-items li a:hover {
   text-align: center;
   font-size: 2.5rem;
   font-weight: bolder;
+  font-family: var(--prim-font);
 }
 
 #pricing .pricing-header .divider-1 {
@@ -204,6 +223,7 @@ nav .nav-items li a:hover {
   box-shadow: 5px 5px 10px 1px #888888;
   margin: 3rem;
   cursor: pointer;
+  font-family: var(--prim-font);
 }
 
 #pricing .pricing-cards .pricing-card:hover {
