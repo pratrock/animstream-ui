@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+   <header> 
+    <nav class="mobile-header">
+      <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'));" aria-label="Main Menu">
+        <svg width="50" height="50" viewBox="0 0 100 100">
+          <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
+    </nav>
+      <nav class="nav hide">
+        <div class="logo">
+          <img src="./images/Logos/Logo.png" />
+          <h1>ANISTREAM</h1>
+        </div>
+        <ul class="nav-items">
+          <li><a href="javascript:void(0)">Shows</a></li>
+          <li><a href="javascript:void(0)">Movies</a></li>
+          <li><a href="javascript:void(0)">Manga</a></li>
+          <li><a href="javascript:void(0)">Upcoming</a></li>
+        </ul>
+        <div class="user-login">
+          <button>Login</button>
+          <button>Sign in</button>
+        </div>
+      </nav>
+   </header> 
+    <section id="slideshow">
+      <h2>Watch Attack on Titan : The final season streaming now !</h2>
+      <div class="slider-img">
+        <img
+          src="./images/Attack-on-Titan-Season-4-Poster.webp"
+          height="100%"
+        />
+      </div>
+    </section>
+    <section id="anime-container">
+      <div class="anime-header">
+        <h3>MOST POPULAR ANIME</h3>
+        <div class="divider"></div>
+      </div>
+      <div class="anime-cards">
+        <div class="anime-card">
+          <img src="./images/death note poster.jpg" />
+          <p>Death Note</p>
+        </div>
+        <div class="anime-card">
+          <img src="./images/Demon slayer poster.jpg" />
+          <p>Demon Slayer</p>
+        </div>
+        <div class="anime-card">
+          <img src="./images/dragon-ball-z-anime-wallpaper-preview.jpg" />
+          <p>Dragon Ball Z</p>
+        </div>
+        <div class="anime-card">
+          <img src="./images/mha poster.webp" />
+          <p>My Hero Academia</p>
+        </div>
+        <div class="anime-card">
+          <img src="./images/naruto poster.jpg" />
+          <p>Naruto</p>
+        </div>
+      </div>
+    </section>
+    <section id="pricing">
+      <div class="pricing-header">
+        <h3>Plans</h3>
+        <div class="divider-1"></div>
+      </div>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <h4>Free</h4>
+          </div>
+          <div class="pricing-card-cost">
+            <p>$0/month</p>
+          </div>
+          <ul>
+            <li>Free for liftime</li>
+            <li>Limited shows</li>
+            <li>Limited mangas</li>
+            <li>On-Air episodes after 1 month</li>
+            <li>Standard Quality</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <h4>Pro</h4>
+          </div>
+          <div class="pricing-card-cost">
+            <p>$5/month</p>
+          </div>
+          <ul>
+            <li>Only on 1 device</li>
+            <li>All shows</li>
+            <li>All mangas</li>
+            <li>On-Air episodes after 2 hours</li>
+            <li>High Quality</li>
+          </ul>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card-header">
+            <h4>Premium</h4>
+          </div>
+          <div class="pricing-card-cost">
+            <p>$15/month</p>
+          </div>
+          <ul>
+            <li>Upto 4 devices</li>
+            <li>All shows</li>
+            <li>All mangas</li>
+            <li>On-Air episodes after 2 hours</li>
+            <li>Highest Quality(4K)</li>
+          </ul>
+        </div>
+    
+      </div>
+       
+      </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="logo">
+          <img src="./images/Logos/Logo.png" />
+          <h1>ANISTREAM</h1>
+        </div>
+        <ul class="nav-items-footer">
+          <li><a href="javascript:void(0)">About</a></li>
+          <li><a href="javascript:void(0)">Licenses</a></li>
+          <li><a href="javascript:void(0)">Streaming Rights</a></li>
+          <li><a href="javascript:void(0)">Terms & Conditions</a></li>
+          <li><a href="javascript:void(0)">Help</a></li>
+        </ul>
+      </nav>
+    </footer>
+    <script>
+
+document.querySelector('.menu').addEventListener('click', function(event) {
+  event.preventDefault();
+  var nav = document.querySelector('.nav'); // Select the nav element with the content
+  
+  // Toggle the "show" class
+  nav.classList.toggle('show');
+});
+
+
+   
+    </script>
+  </body>
+</html>

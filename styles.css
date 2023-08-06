@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --nav-background: rgb(25, 102, 211);
+  --blue: rgb(64, 124, 209);
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.mobile-header {
+  display: hidden;
+}
+
+.logo h1 {
+  color: white;
+  text-shadow: 4px 4px 4px black;
+}
+
+.mobile-header {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--nav-background);
+  align-items: center;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0px;
+}
+
+nav .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+nav .logo img {
+  height: 50px;
+  width: 50px;
+}
+
+nav .nav-items {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+nav .nav-items li {
+  list-style: none;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+nav .nav-items li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+nav .nav-items li a:hover {
+  text-decoration: underline;
+}
+
+.user-login button {
+  border-radius: 5rem;
+  background-color: white;
+  color: var(--nav-background);
+  font-weight: bolder;
+  font-size: 1.1rem;
+  border: none;
+  padding: 0.3rem 1rem;
+  box-shadow: 2px 2px 2px black;
+  cursor: pointer;
+}
+
+.user-login button:focus {
+  box-shadow: none;
+}
+
+#slideshow {
+  background-color: black;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 0 0 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+#slideshow h2 {
+  color: white;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  animation: slideIn 10s ease-in-out 0.5s both infinite;
+}
+
+.slider-img {
+  height: 380px;
+}
+
+#anime-container {
+  background-color: var(--blue);
+  padding-bottom: 1rem;
+}
+#anime-container .anime-header {
+  padding: 2rem;
+}
+
+#anime-container .anime-header h3 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#anime-container .anime-header .divider {
+  border: 2px solid white;
+  width: 50%;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+#anime-container .anime-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#anime-container .anime-cards .anime-card {
+  width: 400px;
+  height: 250px;
+  padding: 2rem;
+  cursor: pointer;
+}
+#anime-container .anime-cards .anime-card img:hover {
+  transition-duration: 0.4s;
+  box-shadow: 5px 5px 10px 5px black;
+}
+
+#anime-container .anime-cards .anime-card img {
+  width: 100%;
+  height: 100%;
+}
+
+#anime-container .anime-cards .anime-card p {
+  color: white;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+#pricing {
+  background-color: white;
+  padding: 2rem 0 5rem 0;
+}
+
+#pricing .pricing-header {
+  padding: 2rem;
+}
+#pricing .pricing-header h3 {
+  color: var(--blue);
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+#pricing .pricing-header .divider-1 {
+  border: 2px solid var(--blue);
+  width: 25%;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+
+#pricing .pricing-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#pricing .pricing-cards .pricing-card {
+  border: 3px solid var(--blue);
+  border-radius: 15px;
+  width: 290px;
+  box-sizing: border-box;
+  padding: 3rem 1rem;
+  box-shadow: 5px 5px 10px 1px #888888;
+  margin: 3rem;
+  cursor: pointer;
+}
+
+#pricing .pricing-cards .pricing-card:hover {
+  background-color: var(--blue);
+  color: white;
+}
+
+#pricing .pricing-cards .pricing-card .pricing-card-header {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#pricing .pricing-cards .pricing-card .pricing-card-header h4 {
+  font-size: 3rem;
+  color: var(--blue);
+  text-align: center;
+}
+
+#pricing .pricing-cards .pricing-card:hover .pricing-card-header h4 {
+  color: white;
+}
+
+#pricing .pricing-cards .pricing-card .pricing-card-cost {
+  padding: 1.5rem 0 4rem 0;
+}
+
+#pricing .pricing-cards .pricing-card .pricing-card-cost p {
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  color: black;
+}
+
+#pricing .pricing-cards .pricing-card ul {
+  padding-left: 2rem;
+  font-size: 1.5rem;
+  color: var(--blue);
+  font-weight: bold;
+}
+
+#pricing .pricing-cards .pricing-card:hover ul {
+  color: white;
+}
+
+nav .nav-items-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .nav-items-footer li {
+  list-style: none;
+  padding: 0 2rem;
+  font-size: 1.5rem;
+}
+
+nav .nav-items-footer li a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+nav .nav-items-footer li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 980px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--nav-background);
+    align-items: center;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  nav .logo {
+    display: flex;
+    padding: 0 1.5rem;
+    justify-content: center;
+  }
+  nav .nav-items {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .user-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .user-login button {
+    color: white;
+    background-color: var(--nav-background);
+    font-weight: bolder;
+    font-size: 1.1rem;
+    border: none;
+    padding: 0.3rem 1rem;
+    box-shadow: none;
+    cursor: pointer;
+  }
+  #pricing .pricing-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #pricing .pricing-cards .pricing-card {
+    border: 3px solid var(--blue);
+    border-radius: 15px;
+    width: 240px;
+    box-sizing: border-box;
+    padding: 1rem 0.5rem;
+    box-shadow: 5px 5px 10px 1px #888888;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  #pricing .pricing-cards .pricing-card .pricing-card-header h4 {
+    font-size: 1.5rem;
+    color: var(--blue);
+    text-align: center;
+  }
+  #pricing .pricing-cards .pricing-card .pricing-card-cost {
+    padding: 1rem 0 2rem 0;
+  }
+  nav .nav-items-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+
+  .mobile-header {
+    display: flex;
+    background-color: var(--nav-background);
+    padding: 1rem 0;
+    align-items: baseline;
+    padding-left: 1rem;
+  }
+
+  .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+}
